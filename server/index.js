@@ -60,8 +60,8 @@ app.get('/get-phone', async (req,res) => {
 })
 
 //Actualizar registro
-app.patch('/update-phone/', async (req,res) => {
-    const updatedPhone = await PhoneBook.findByIdAndUpdate(req.params.id,req.body,{
+app.put('/update-phone/', async (req,res) => {
+    const updatedPhone = await PhoneBook.findByIdAndUpdate(req.body.id,req.body,{
         new : true,
         runValidators : true
       })

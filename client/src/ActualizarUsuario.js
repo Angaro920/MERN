@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import Axios from "axios";
 
 function ActualizarUsuario() {
-  /* const estilo = {
+  const estilo = {
     width: "18rem",
-  }; */
+  };
   const [phonebook, setPhonebook] = useState([]);
   const [phone, setNewPhone] = useState(0);
     useEffect(() => {
@@ -14,7 +14,7 @@ function ActualizarUsuario() {
     }, []);
 
   const updatePhone = (id) =>{
-       Axios.put(`http://localhost:8080/update-phone/`,{phone})
+       Axios.put('http://localhost:8080/update-phone/',{ id,phone })
   }
 
   return (
