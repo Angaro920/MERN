@@ -5,7 +5,7 @@ function AgregarUsuario() {
   //hooks
   const [name, setNombre] = useState('');
   const [email, setEmail] = useState('');
-  const [phone, setTelefono] = useState(0);
+  const [phone, setTelefono] = useState();
 
   const addNewNumber = () => {
     axios.post('http://localhost:8080/add-phone',{name,phone,email}).then(alert("Usuario Agregado")).then(window.location.reload());

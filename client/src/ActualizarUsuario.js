@@ -20,6 +20,7 @@ function ActualizarUsuario() {
 
   return (
     <div className="container">
+      <p></p>
       <h1>Lista de Contactos</h1>
       <div className="album">
         <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 "></div>

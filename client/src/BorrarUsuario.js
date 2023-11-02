@@ -5,7 +5,6 @@ function BorrarUsuario() {
   const estilo = {
     width: "18rem",
   };
-  const [phone, setNewPhone] = useState(0);
   useEffect(() => {
     Axios.get("http://localhost:8080/get-phone").then((res) => {
       setPhonebook(res.data.data.phoneNumbers);
